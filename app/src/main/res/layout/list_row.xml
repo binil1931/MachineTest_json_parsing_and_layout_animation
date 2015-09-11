@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   android:background="#3E3E41"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="1" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#5A5A5C"
+
+            android:layout_weight=".97" >
+
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginTop="5dp"
+               android:paddingBottom="10dp"
+                >
+
+            <RelativeLayout 
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:paddingLeft="10dp"
+               android:layout_centerVertical="true" 
+                android:layout_height="wrap_content">
+           <ImageView 
+               android:id="@+id/circle_image"
+               android:layout_width="15dp"
+               android:layout_height="15dp"
+               android:src="@drawable/ciricle"
+               />
+            </RelativeLayout>   
+            <TextView
+                android:id="@+id/title"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rihanna Love the way lie"
+                android:layout_marginTop="5dp"
+                android:textColor="#fff"
+                android:textSize="15dip"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/id"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/image"
+                android:text="Just gona stand there and ..."
+                android:textColor="#fff"
+                android:textSize="10dp" />
+
+
+               <TextView
+                   android:id="@+id/property_title"
+                   android:layout_width="fill_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/title"
+                   android:layout_marginLeft="10dp"
+                   android:layout_toRightOf="@+id/image"
+                   android:visibility="gone"
+                   android:text="Just gona stand there and ..."
+                   android:textColor="#fff"
+                   android:textSize="10dp" />
+        </RelativeLayout>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/border_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".03"
+            android:background="#800000"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
